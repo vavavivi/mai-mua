@@ -8,19 +8,23 @@
          body {
             font-family: Arial, sans-serif;
             text-align: center;
-            margin-top: 20%;
+            margin: 0; /* Xóa margin để hình nền phủ kín */
+            height: 100vh; /* Đặt chiều cao body thành 100% chiều cao màn hình */
             background-image: url('https://cdn.pixabay.com/photo/2021/09/25/15/18/heart-6655201_1280.png'); /* Đường dẫn tới hình trái tim */
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            color: white; /* Màu chữ cho dễ đọc trên nền ảnh */
+            background-size: cover; /* Đảm bảo hình ảnh bao phủ toàn bộ màn hình */
+            background-position: center; /* Đặt hình ảnh vào giữa */
+            background-repeat: no-repeat; /* Không lặp lại hình ảnh */
+            color: white; /* Màu chữ để dễ đọc trên nền ảnh */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
         #counter {
             font-size: 2em;
             background: rgba(0, 0, 0, 0.5); /* Đặt nền mờ cho văn bản để dễ đọc */
             padding: 10px;
             border-radius: 10px;
-            display: inline-block;
         }
     </style>
 </head>
